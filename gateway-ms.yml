@@ -4,14 +4,14 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: musica
-          uri: lb://musica
+        - id: movie-service
+          uri: lb://movie-service
           predicates:
-            - Path=/games/**
-        - id: musica-library-service
-          uri: lb://musica-library-service
+            - Path=/movies/**
+        - id: catalog-service
+          uri: lb://catalog-service
           predicates:
-            - Path=/library/**
+            - Path=/catalog/**
 eureka:
   instance:
     hostname: localhost
