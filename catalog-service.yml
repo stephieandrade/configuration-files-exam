@@ -1,8 +1,20 @@
+server:
+  port: 8099
 spring:
-  application:
-    name: movie-service
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/stephieandrade/configuration-files-exam
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/catalog
+    username: root
+    password: root
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      fetchRegistry: true
+      registerWithEureka: true
