@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/BackExamen
+      uri: mongodb://localhost:27017/backend
 eureka:
    client:
      fetchRegistry: true
