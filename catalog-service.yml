@@ -9,9 +9,9 @@ spring:
     password: guest
     port: 15672
     username: guest
-    exchange: movie.exchange
-    queue: movie.queue
-    routingkey: movie.routingkey
+    #exchange: movie.exchange
+    #queue: movie.queue
+    #routingkey: movie.routingkey
 eureka:
   client:
     service-url:
