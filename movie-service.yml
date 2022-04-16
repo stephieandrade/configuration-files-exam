@@ -17,6 +17,9 @@ spring:
     password: guest
     host: localhost
     port: 5672
+    exchange: movie.exchange
+    queue: movie.queue
+    routingkey: movie.routingkey
 eureka:
   client:
     service-url:
@@ -24,30 +27,5 @@ eureka:
       fetchRegistry: true
       registerWithEureka: true
       
-queue:
-  movie:
-    name: MovieQueue
-
-message: hello world
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: info
-  info:
-    env:
-      enabled: true
-  endpoint:
-    info:
-      enabled: true
-
-info:
-  app:
-    name: ${spring.application.name}
-    version: 1.0.0
-    description: Movie Microservice
-  svc:
-    intanceid: ${eureka.instance.instance-id}
-    port: ${server.port}
-      
+app:
+  message: Message has been sent Successfully..
