@@ -11,7 +11,7 @@ spring:
     port: 5672
     exchange: series.exchange
     queue: series.queue
-    routingkey: series.routingke   
+    routingkey: series.routingkey  
 eureka:
    client:
      fetchRegistry: true
