@@ -9,9 +9,9 @@ spring:
     password: guest
     host: localhost
     port: 5672
-    exchange: series.exchange
-    queue: series.queue
-    routingkey: series.routingkey  
+    exchange2: series.exchange
+    queue2: series.queue
+    routingkey2: series.routingkey  
 eureka:
    client:
      fetchRegistry: true
