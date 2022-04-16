@@ -10,3 +10,29 @@ eureka:
       defaultZone: http://localhost:8761/eureka
       fetchRegistry: true
       registerWithEureka: true
+queue:
+  movie:
+    name: MovieQueue
+
+message: hello catalog
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info
+  info:
+    env:
+      enabled: true
+  endpoint:
+    info:
+      enabled: true
+
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: Catalog Microservice
+  svc:
+    intanceid: ${eureka.instance.instance-id}
+    port: ${server.port}
