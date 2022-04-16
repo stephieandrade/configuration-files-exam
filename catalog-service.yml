@@ -14,7 +14,14 @@ spring:
     routingkey: movie.routingkey
     exchange2: series.exchange
     queue2: series.queue
-    routingkey2: series.routingkey  
+    routingkey2: series.routingkey
+  zipkin:
+    baseUrl: http://localhost:9411/
+    enabled: true
+    sender:
+        type: rabbit
+    enabled: true
+
 eureka:
   client:
     service-url:
