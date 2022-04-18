@@ -50,7 +50,7 @@ resilience4j:
         retryExceptions:
           - feign.FeignException$InternalServerError
           
- management:
+management:
   endpoints:
     web:
       exposure:
@@ -61,11 +61,4 @@ resilience4j:
   endpoint:
     info:
       enabled: true
-info:
-  app:
-    name: ${spring.application.name}
-    version: 1.0.0
-    description: microservice course
-  svc:
-    intanceid: ${eureka.instance.instance-id}
-    port: ${server.port}
+
