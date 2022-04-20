@@ -30,7 +30,7 @@ eureka:
       registerWithEureka: true
 
 queue: 
-  catalog:
+  movie:
     name: MovieQueue
 
 resilience4j:
