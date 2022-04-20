@@ -7,7 +7,7 @@ spring:
   rabbitmq:
     host: localhost
     password: guest
-    port: 15672
+    port: 5672
     username: guest
     #exchange: movie.exchange
     #queue: movie.queue
