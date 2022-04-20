@@ -30,3 +30,6 @@ eureka:
 app:
   message: Message has been sent Successfully..
 
+queue:
+  movie:
+    name: MovieQueue
