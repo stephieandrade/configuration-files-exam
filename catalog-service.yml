@@ -53,3 +53,4 @@ resilience4j:
         retryExceptions:
           - feign.FeignException$InternalServerError
           
+message: Hola que tal tu como estás? Dime si eres feliz. Atte Catalog Service
