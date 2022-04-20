@@ -33,3 +33,6 @@ app:
 queue:
   movie:
     name: MovieQueue
+    
+message: Hola!
+
