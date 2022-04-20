@@ -22,6 +22,6 @@ eureka:
 message: Hola desde Series Service!
 
 queue:
-  movie:
+  serie:
     name: SerieQueue
 
