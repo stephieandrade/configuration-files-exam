@@ -28,7 +28,11 @@ eureka:
       defaultZone: http://localhost:8761/eureka
       fetchRegistry: true
       registerWithEureka: true
-      
+
+queue: 
+  catalog:
+    name: MovieQueue
+
 resilience4j:
   circuitbreaker:
     instances:
