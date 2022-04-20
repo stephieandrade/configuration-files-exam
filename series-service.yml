@@ -9,9 +9,9 @@ spring:
     password: guest
     host: localhost
     port: 5672
-    exchange2: series.exchange
-    queue2: series.queue
-    routingkey2: series.routingkey  
+    #exchange2: series.exchange
+    #queue2: series.queue
+    #routingkey2: series.routingkey  
 eureka:
    client:
      fetchRegistry: true
@@ -20,4 +20,8 @@ eureka:
      defaultZone: http://localhost:8761/eureka
       
 message: Hola desde Series Service!
+
+queue:
+  movie:
+    name: SerieQueue
 
