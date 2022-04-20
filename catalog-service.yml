@@ -9,12 +9,12 @@ spring:
     password: guest
     port: 15672
     username: guest
-    exchange: movie.exchange
-    queue: movie.queue
-    routingkey: movie.routingkey
-    exchange2: series.exchange
-    queue2: series.queue
-    routingkey2: series.routingkey
+    #exchange: movie.exchange
+    #queue: movie.queue
+    #routingkey: movie.routingkey
+    #exchange2: series.exchange
+    #queue2: series.queue
+    #routingkey2: series.routingkey
   #zipkin:
    # baseUrl: http://localhost:9411/
     #enabled: true
