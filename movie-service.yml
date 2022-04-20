@@ -17,9 +17,7 @@ spring:
     password: guest
     host: localhost
     port: 5672
-    exchange: movie.exchange
-    queue: movie.queue
-    routingkey: movie.routingkey
+    
 eureka:
   client:
     service-url:
