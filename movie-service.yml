@@ -28,6 +28,5 @@ eureka:
 queue:
   movie:
     name: MovieQueue
-    
-message: Hola!
+ 
 
