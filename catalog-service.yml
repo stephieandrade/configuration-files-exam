@@ -32,6 +32,8 @@ eureka:
 queue: 
   movie:
     name: MovieQueue
+  serie:
+    name: SerieQueue
 
 resilience4j:
   circuitbreaker:
