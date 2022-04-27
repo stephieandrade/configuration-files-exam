@@ -18,14 +18,14 @@ spring:
             - Path=/series/**
 eureka:
   instance:
-    hostname: config-server
+    hostname: eureka
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
   client:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://config-server:8761/eureka
+      defaultZone: http://eureka:8761/eureka
 management:
   endpoints:
     web:
