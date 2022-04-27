@@ -7,6 +7,6 @@ eureka:
     fetchRegistry: false
     registerWithEureka: false
     serviceUrl:
-      defaultZone: http://eureka:8761/eureka
+      defaultZone: http://serverconfig:8761/eureka
   instance:
     preferIpAddress: true
