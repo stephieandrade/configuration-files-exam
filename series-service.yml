@@ -7,7 +7,7 @@ spring:
   rabbitmq:
     username: guest
     password: guest
-    host: localhost
+    host: rabbitmq
     port: 5672 
     
 eureka:
@@ -15,7 +15,7 @@ eureka:
      fetchRegistry: true
      registerWithEureka: true
    serviceUrl:
-     defaultZone: http://config-service:8761/eureka 
+     defaultZone: http://eureka:8761/eureka 
 
 queue:
   serie:
