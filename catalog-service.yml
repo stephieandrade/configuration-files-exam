@@ -5,7 +5,7 @@ spring:
     mongodb:
       uri: mongodb://catalog-service:27017/backend
   rabbitmq:
-    host: localhost
+    host: rabbitmq
     password: guest
     port: 5672
     username: guest
