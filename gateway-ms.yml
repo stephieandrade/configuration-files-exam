@@ -1,6 +1,6 @@
 spring:
   cloud:
-   discovery:
+    discovery:
         locator:
           enabled: false
           lower-case-service-id: true 
