@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://series-service:27017/backend
+      uri: mongodb://db-mongo:27017/backend
   rabbitmq:
     username: guest
     password: guest
