@@ -18,7 +18,7 @@ spring:
             - Path=/series/**
 eureka:
   instance:
-    hostname: localhost
+    #hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     prefer-ip-address: true
   client:
