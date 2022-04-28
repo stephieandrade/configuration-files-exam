@@ -1,5 +1,3 @@
-server:
-  port: 8080
 spring:
   cloud:
    discovery:
@@ -20,47 +18,36 @@ spring:
           uri: lb://series-service
           predicates:
             - Path=/series/**
+server:
+  port: ${SERVER_PORT:8080}
+  
 eureka:
+  instance:
+    hostname: eureka-server
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
   client:
-    service-url:
+    register-with-eureka: true
+    fetch-registry: true
+    serviceUrl:
       defaultZone: http://eureka-server:8761/eureka
-
+      
 management:
-  endpoint:
-    health:
-      enabled: true
-      show-details: always
-    shutdown:
-      enabled: true
   endpoints:
     web:
       exposure:
-        include: '*'
-#   instance:
-#     hostname: localhost
-#     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-#     prefer-ip-address: true
-#   client:
-#     register-with-eureka: true
-#     fetch-registry: true
-#     serviceUrl:
-#       defaultZone: http://eureka-server:8761/eureka
-# management:
-#   endpoints:
-#     web:
-#       exposure:
-#         include: info
-#   info:
-#     env:
-#       enabled: true
-#   endpoint:
-#     info:
-#       enabled: true
-# info:
-#   app:
-#     name: ${spring.application.name}
-#     version: 1.0.0
-#     description: servicio gateway
-#   svc:
-#     intanceid: ${eureka.instance.instance-id}
-#     port: ${server.port}
+        include: info
+  info:
+    env:
+      enabled: true
+  endpoint:
+    info:
+      enabled: true
+info:
+  app:
+    name: ${spring.application.name}
+    version: 1.0.0
+    description: servicio gateway
+  svc:
+    intanceid: ${eureka.instance.instance-id}
+    port: ${server.port}
