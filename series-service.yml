@@ -7,7 +7,7 @@ spring:
   rabbitmq:
     username: guest
     password: guest
-    host: rabbitmq
+    host: rabbit-mq
     port: 5672 
     
 eureka:
