@@ -2,6 +2,10 @@ server:
   port: 8080
 spring:
   cloud:
+   discovery:
+        locator:
+          enabled: false
+          lower-case-service-id: true 
     gateway:
       routes:
         - id: movie-service
