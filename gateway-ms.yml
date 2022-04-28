@@ -1,4 +1,4 @@
-erver:
+server:
   port: 8080
 spring:
   cloud:
@@ -19,10 +19,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://service-registry:8761/eureka
-      
-server:
-  port: ${SERVER_PORT:8080}
+      defaultZone: http://eureka-server:8761/eureka
 
 management:
   endpoint:
